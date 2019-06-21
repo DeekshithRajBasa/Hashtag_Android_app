@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:background="#f0f0f0"
+   >
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            android:paddingTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="91dp"
+                android:layout_height="86dp"
+                android:transitionName="imagetrans"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:fontFamily="@font/nunito_bold"
+                android:id="@+id/title"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="45dp"
+                android:text="title"
+                android:transitionName="titletrans"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:transitionName="logotrans"
+                android:layout_width="81dp"
+                android:layout_height="26dp"
+                android:layout_alignStart="@+id/title"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="-4dp"
+                android:background="@drawable/hashtextwhi" />
+
+            <TextView
+                android:fontFamily="@font/nunito_bold"
+
+                android:id="@+id/description"
+                android:transitionName="disctrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="104dp"
+                android:text="description"
+
+
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

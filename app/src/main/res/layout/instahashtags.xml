@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000"
+    tools:context=".instahashtags">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/too"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/hashtagtab"
+            android:layout_width="105dp"
+            android:layout_height="31dp"
+            android:background="@drawable/hashtextwhi"
+            android:foregroundGravity="center" />
+        <RelativeLayout
+            android:id="@+id/searchlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <EditText
+
+                android:id="@+id/search_field"
+                android:layout_width="204dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_toStartOf="@+id/search_btn"
+                android:background="@drawable/search_layout"
+                android:ems="10"
+                android:fontFamily="@font/nunito_semibold"
+                android:foregroundGravity="center"
+                android:hint="Search here"
+
+                android:inputType="textPersonName"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+
+                android:textColor="#999999"
+                android:textColorHint="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:background="@drawable/search" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+
+        android:layout_width="263dp"
+        android:layout_height="255dp"
+
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="boxloader.json" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/too"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="494dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

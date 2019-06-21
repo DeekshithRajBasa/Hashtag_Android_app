@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".feed"
+    tools:showIn="@layout/app_bar_feed">
+
+
+    <android.support.v7.widget.CardView
+
+
+        android:id="@+id/instaba"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/too"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/instaba2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- <TextView
+                     android:paddingTop="40dp"
+                     android:paddingLeft="60dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="#FACEBOOK"
+                     android:textColor="#ffffff"
+                     android:textSize="40sp" />  -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageView
+                android:id="@+id/targetinsta"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:background="@drawable/backinsta" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:paddingLeft="20dp">
+
+
+            <ImageView
+
+                android:layout_width="94dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hashtextwhi" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+
+
+        android:id="@+id/instaba2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/too"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#3d5b9a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instaba">
+
+        <!-- <TextView
+                     android:paddingTop="40dp"
+                     android:paddingLeft="60dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="#FACEBOOK"
+                     android:textColor="#ffffff"
+                     android:textSize="40sp" />  -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageView
+
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="113dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fbsmalllogo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:paddingLeft="20dp">
+
+            <ImageView
+
+                android:layout_width="94dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hashtextwhi" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
